@@ -1,4 +1,4 @@
-FROM node:18-alpine
+erFROM node:18-alpine
 
 # Set working folder inside the container
 WORKDIR /app
@@ -17,4 +17,4 @@ ENV PORT=3000
 EXPOSE 3000
 
 # Start the app
-CMD ["node", "index.js"]
+CMD ["node", "server.js"]
