@@ -12,6 +12,7 @@
  * 
  * ============================================================================
  */
+const port = process.env.PORT || 4000
 
 const express = require('express');
 const cors = require('cors');
@@ -348,7 +349,7 @@ async function start() {
     try {
         await initDatabase();
         
-        app.listen(CONFIG.port, () => {
+        app.listen(port, () => {
             console.log('');
             console.log('🚀 Motherduck Proxy Server running!');
             console.log(`   URL: http://localhost:${CONFIG.port}`);
